@@ -1,0 +1,24 @@
+{
+  "name": "mywork",
+  "description": "newamericantest",
+  "main": "index.js",
+  "authors": [
+    "Nick Timmer nicktimmer@gmail.com"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "npm"
+  ],
+  "homepage": "https://github.com/n7ck/newamericansite",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}

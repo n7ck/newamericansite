@@ -2,374 +2,11 @@
 
 <html>
 <head>
-    <title>NICK</title>
-    <script src="dependencies/jquery/jquery-3.1.1.js"></script>
-    <link href="dependencies/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet"> 
-    <script src="dependencies/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    <style>
-    /* Font Styling */
-    /* Font Styling */
-    
-    *{
-        font-family:
-        /* 1 */ -apple-system, BlinkMacSystemFont,
-        /* 2 */ "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        /* 3 */ "Helvetica Neue", sans-serif;
-        
-        /* border is subtracted from height/width so size stays same.*/
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    .font-lg{
-        font-size: 2.3em;
-        width: 660px;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-    .font-xl{
-        font-size: 45px;
-    }
-    .font-md{
-        font-size: 1.2em;
-    }
-    .color-one, .btn-face.active > .name{
-        color: #FA2B00;
-        font-weight: bold;
-    }
-    .color-two{
-        color: #006895
-    }
-    .clearfix {
-        overflow: auto;
-    }
-    /*modify bootstrap styling*/
-    .navbar {
-        margin-bottom: 0;
-    }
-    .navbar-default {
-        background-color: white;
-        border: none;
-    }
-    
-    /* Button Styling */
-    /* Button Styling */
-    .btn-play{
-        height: 50px;
-        float: left;
-        font-size: 2em;
-        border-radius: 50%;
-        background-color: transparent;
-        border-color: #FA2B00;
-        border-style: solid;
-        padding: 7px;
-        color: #FA2B00;
-        margin: 0 20px 0 0;
-        vertical-align: middle;
-    }
-    .btn-play:hover{
-        color: #fa8133;
-        border-color: #fa8133;
-    }
-    .btn-play.glyphicon-play:before{
-        margin: 10px 0 10px 5px;/*center glyphicon*/
-    }
-    .navbar-nav > li:hover {
-        background-color: #F3F3F3;
-    }
-    .navbar-nav > li > a:hover{
-        color: blue !important;
-    }
-    .navbar-right > .orange{
-        margin:12px 0 0 12px;
-    }
-    .orange{
-        border-radius:0;
-        background-color: #FA2B00;
-        color: #ffffff;
-        /*576 x 178*/
-    }
-    .orange:visited{
-        color: #ffffff;
-    }
-    .orange:hover{
-        color: #ffffff;
-        background-color: #BA2202;
-        background: -webkit-linear-gradient(#FA2B00, orange); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#FA2B00, orange); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#FA2B00, orange); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#FA2B00, orange); /* Standard syntax */
-        border-color: #FA2B00;
-    }
-    .orange:active {
-        /*border-top: 1px solid rgba(0, 0, 0, 0);*/
-        /*padding: 11px 16px 9px 16px;*/
-    }
-    .btn-orange-border{
-        border: 2px solid #FA2B00;
-        border-radius:0;
-        border-bottom-right-radius:0;
-        border-bottom-left-radius:0;
-    }
-    .btn-thick-border{
-        border-width: 3px;
-    }
-    .btn-orange-border, .btn-orange-border:visited {
-        color: #FA2B00;
-    }
-    .btn-orange-border:hover{
-        color: orange;
-    }
-    .btn-face{
-        opacity: 0.2;
-        border: 0px;
-        padding: 24px 40px;
-        /*padding: 5% 5%;*/
-        margin: 4px;
-        box-shadow: none !important;
-        border-radius: 0;
-    }
-    .btn-face:hover{
-        opacity: 0.5;
-    }
-    .nowrap, .quote > span{
-        color: #006895;
-         white-space: nowrap;
-    }
-    /* .btn-face:active .btn-face:visited, .btn-face:focus*/
-    .btn-face.active{
-        opacity: 1;
-        outline:none !important;
-    }
-    .btn-blue, .btn-blue:active, .btn-blue:hover, .btn-blue:visited{
-        color: white;
-    }
-    .btn-blue {
-        font-size: 1.5em;
-        border-radius:0;
-        background-color: #006895;
-        /*margin-top: calc(5% + 120px)*/
-    }
-    .btn-blue:hover{
-        border-color: #006895;
-        background: -webkit-linear-gradient(#006895, lightblue); /* For Safari 5.1 to 6.0 */
-        background: -o-linear-gradient(#006895, lightblue); /* For Opera 11.1 to 12.0 */
-        background: -moz-linear-gradient(#006895, lightblue); /* For Firefox 3.6 to 15 */
-        background: linear-gradient(#006895, lightblue); /* Standard syntax */
-    }
-    .vert-center{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .container-blue{
-        height: 100px;
-    }
-    .btn-lg{ padding: 14px 16px;}
-    .btn-xl:active{
-        padding: 16px 50px 14px 50px;/*1px lower */
-    }
-    .btn-xl, btn-xl:active{
-        padding: 15px 50px;
-        font-size: 18px;
-        line-height: 1.3333333;
-    }
-    h1{
-        font-family: DIN Alternate;
-    }
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
-        background-color: #D4E8F0;
-        font-weight: bold;
-        color: blue;
-    }
-    .link{
-        text-decoration: underline;
-    }
-    hr.vertical
-    {
-    /*    not working*/
-       width: 1px;
-       border: 1px;
-       height: 100%; /* or height in PX */
-       /*display: inline;*/
-    }
-    .logo{
-        /*height: 45px;*/
-        position: absolute;
-        width: 20%;
-        min-width: 200px;
-    }
-    li:hover{
-        color: blue;
-    }
-    
-    /* Images   */
-    /* Images   */
-    
-    .bigimage{
-        background-size: cover;
-    }
-    #darkglimmer{
-        /*image: url(images/darkglimmer.png);*/
-        background-image: url(images/darkglimmer.png);
-        /*width: 100%;height:100%*/
-        color: white;
-    }
-    #sitcircle{
-        background-image: url("images/sitcircleimage.png");
-        background-size: cover;
-        height: 200px;
-    }
-    .fullimage{
-        width: 100%;height:100%
-    }
-    .vcenter{
-        
-    }
-    /* 3 Who We Are Boxes */
-    .outergray{
-        height: 400px;
-        position: relative;
-    }
-    .grayband{
-        top: 0px;
-        position: absolute;
-        height: 50%;
-        width: 100%;
-        background-color:#DEDEDE;
-    }
-    .companyboxes{
-        display: flex;
-        position: relative;
-        width: 60%;
-        
-    }
-    .cbox, .quotebox, .btn-face{
-        background-color: #F3F3F3 !important;
-    }
-    .cbox{
-        margin: 3px;
-        padding: 3% 5% 5% 5%;
-        font-size: 1.25em;
-        text-align: center;
-        flex-basis: 0; flex-grow:1;/*combined make equal size*/
-    }
-    a{
-        cursor:pointer;
-    }
-    .bold{
-        font-weight: bold;
-    }
-    .space{
-        height: 40px;
-    }
-    .stretched{
-        width: auto;
-    }
-    .buffer{
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    .buffer-below{
-        margin-bottom: 10px;
-    }
-    
-    /*  Faces + Quotes  */
-    
-    .img-circle{
-        margin-bottom:20px;
-    }
-    .quotebox{
-        display: table;
-        margin: auto;
-        margin-bottom: 120px;
-        width: 70%;
-        height: 102px;
-        min-width:660px;
-    }
-    .quote{
-        display: table-cell;
-        vertical-align: middle;
-        margin: auto;
-        height: 50%;
-        width: 90%;
-        padding: 0 7%;
-        font-size: 1.1em;
-    }
-    
-    /* Small Screen <768 (Media Query)*/
-    @media (max-width: 768px) {
-        .mobile-hidden, .navbar-right > .orange{
-	  display: none;
-        }
-        .companyboxes{
-	  flex-direction: column;
-        }
-        .companyboxes, .btn-group, .quotebox{
-	  min-width: 90%;/*increase width*/
-        }
-        .btn-face{
-	  padding: 15px 0;
-	  width:32%;
-        }
-        .img-circle{
-	  max-width: 80%;
-        }
-        .font-xl{
-	  font-size:35px;
-        }
-        .font-lg{
-	  font-size: 1.7em;
-	  width: 480px;
-	  margin-bottom: 10px;
-        }
-        .font-md{
-	  font-size: 1.1em;
-        }
-        .buffer {
-	  margin-bottom: 0px; 
-        }
-        .container-sitting{
-	  margin-left: -13px;
-	  margin-right: -13px;
-        }
-    }
-    /* Medium Screen 768+ (Media Query)*/
-    @media (min-width: 768px) {
-        .nav > li > a {
-	  padding: 30px 10px;
-        }
-        h1{
-	  font-size: 50px;
-        }
-        .companyboxes{
-	  min-width: 700px;
-        }
-        .extra-padding{
-	  padding: 0 130px;
-        }
-    }
-    /* Large Screen 970+ (Media Query)*/
-    @media (min-width: 970px) {
-        .buffer-below{
-	  margin-bottom: 7%;
-        }
-        .buffer{
-	  margin-bottom: 6%;
-        }
-        .nav > li > a {
-	  padding: 30px 20px;
-        }
-    }
-    
-    /*  Shrink logo when < 768px  */
-    /*@media (max-width: 768px) { .logo{ height: 30px;}}*/
-    
-    /*        background: url(images/transpOrange10.png);	*/
-    .btn-group-wrap {
-        text-align: center;
-    }
-    </style>
+    <title>NickT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery.js"></script> <!-- jquery 3.1.1 -->
+    <link href="css/main.css" rel="stylesheet"> <!--bootstrap.css 3.3.7 + custom css -->
+    <script src="js/bootstrap.js"></script>     <!--bootstrap.js 3.3.7 -->
     
     <script>
     function responsiveHeight( ele, percent, min ){
@@ -378,9 +15,10 @@
         height += "px";
         ele.style.height = height;
     }
-    document.onreadystatechange = function(){
+    //Set up EventListeners once the page loads
+    document.addEventListener("DOMContentLoaded", function(event) {
         responsiveHeight( document.getElementById("darkglimmer"), .37, 268);
-        responsiveHeight( document.getElementById("sitcircle"), .65, 4);
+        responsiveHeight( document.getElementById("sitcircle"), .65, 500);
          
         $(".btn-face").on('click', function(){
 	  $(this).siblings().removeClass('active')
@@ -395,25 +33,16 @@
 	      $('.quote3').removeClass('hidden')
 	  }
         })
-    }
-    //window.addEventListener("resize", responsiveHeight( darkglimmer, .37 ) );
-    window.addEventListener("resize", function(){
-        responsiveHeight( document.getElementById("darkglimmer"), .37, 268);
-        responsiveHeight( document.getElementById("sitcircle"), .65, 450);
+        
+        window.addEventListener("resize", function(){
+	  responsiveHeight( document.getElementById("darkglimmer"), .37, 268);
+	  responsiveHeight( document.getElementById("sitcircle"), .65, 500);
+        });
     });
-   
-    
-    
-    
-    //inicialize height;
-    //responsiveHeight( darkglimmer, .37);
-    // compile the less to css
-    // http://getbootstrap.com/css/#less
     </script>
 </head>
 
 <body>
-
 <div class="nav">
     <nav class="navbar navbar-default">
       <div class="container-fluid">
@@ -437,9 +66,9 @@
 	  <li><a href="#">PRODUCTS</a></li>
 	  <li><a href="#">SUPPORT</a></li>
 	  <li><a href="#">MEDIA</a></li>
-	  <!--<li><hr class="vertical"></li>-->
+	  <li><hr class="vertical"></li>
 	  <li><a href="#">NEWS</a></li>
-	  <a class="btn btn-xl orange" href="#" role="button" onclick="return false;">JOIN US</a>
+	  <a class="btn btn-xl orange pull-right" href="#" role="button" onclick="return false;">JOIN US</a>
 	</ul>
 	
         </div><!-- /.navbar-collapse -->
@@ -477,7 +106,7 @@
         <div class="text-center"><a class="btn-blue btn btn-xl" href="#" role="button" onclick="return false;">LEADERSHIP</a></div>    
     </div>
 
-    <div class="btn-group-wrap">
+    <div class="btn-group-wrap text-center">
         <div class="btn-group" role="group">
 	  <button autofocus type="button" class="active btn-face btn btn-default"><img src="images/rick-web-s-2016.jpg" class="img-circle"><div class="name">RICK ARVIELO</div><div>CEO</div></button>
 	  <button type="button" class="btn-face btn btn-default"><img src="images/team-leader-patty-arvielo.jpg" class="img-circle"><div class="name">PATTY ARVIELO</div><div>PRESIDENT</div></button>
@@ -531,7 +160,7 @@
     
     <div class="space"></div>
     <div class="container stretched">
-        <a class="pull-right orange btn btn-xl" href="#" role="button" onclick="return false;">JOIN NEW AMERICAN FUNDING</a>
+        <div class="text-center"><a class="pull-right orange btn btn-xl" href="#" role="button" onclick="return false;">JOIN NEW AMERICAN FUNDING</a></div>
         <a class="color-one link" >NMLS ID#6606</a> (c) Broker Solutions, Inc. DBA New American Funding. All Rights Reserved.<br>
         Corporate Office: 14511 Myford Road, Suite 100, Tustin, CA 92780.<br>
         <a class="color-one link" >Licensing</a> | <a class="color-one link" >Privacy</a>

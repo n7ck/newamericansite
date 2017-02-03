@@ -1,5 +1,43 @@
+var gulp        = require('gulp');
+var browserSync = require('browser-sync').create();
+var sass        = require('gulp-sass');
+var reload      = browserSync.reload;
+var wiredep = require('wiredep').stream;
+
+gulp.task('default', ['serve']);
+
+gulp.task('serve', ['sass'], function() {
+    browserSync.init({
+        server: "./"
+    });
+
+    gulp.watch("scss/*.scss", ['sass']);
+    gulp.watch(["*.html","js/*.js"]).on('change', reload);
+});
+
+// Compile sass into CSS & auto-inject into browsers
+gulp.task('sass', function() {
+	
+    return gulp.src("scss/main.scss")
+	.pipe(wiredep())
+        .pipe(sass())
+        .pipe(gulp.dest("css"))
+        .pipe(reload({stream: true}));
+});
+
+
+
+
+//rest of file commented out
+//rest of file commented out
+//rest of file commented out
+
+
+
+
+
 // Include gulp
-var gulp = require('gulp');
+//var gulp = require('gulp');
 
 // Include Our Plugins
 //var jshint = require('gulp-jshint');
@@ -8,22 +46,21 @@ var gulp = require('gulp');
 //var uglify = require('gulp-uglify');
 //var rename = require('gulp-rename');
 
-var browserSync = require('browser-sync').create();
+//var browserSync = require('browser-sync').create();
 
 // Static server
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-});
+//gulp.task('browser-sync', function() {
+//    browserSync.init({
+//        server: {
+//            baseDir: "./"
+//        }
+//    });
+//});
 
-gulp.task('default', ['browser-sync']);
+//gulp.task('default', ['browser-sync']);
 
 
 
-//rest of file commented out
 
 
 // or...

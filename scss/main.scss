@@ -1,0 +1,383 @@
+// bower:scss
+// endbower
+
+/* Font Styling */
+/* Font Styling */
+
+*{
+    font-family:
+		BlinkMacSystemFont, Roboto, sans-serif;
+    /*-apple-system, BlinkMacSystemFont,*/
+    /* "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",*/
+    /* "Helvetica Neue", sans-serif;*/
+}
+.font-lg{
+    font-size: 2.3em;
+    width: 660px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.font-xl{
+    font-size: 45px;
+}
+.font-md{
+    font-size: 1.2em;
+}
+.color-one, .btn-face.active > .name{
+    color: #FA2B00;
+    font-weight: bold;
+}
+.color-two{
+    color: #006895
+}
+.clearfix {
+    overflow: auto;
+}
+/*modify bootstrap styling*/
+.navbar {
+    margin-bottom: 0;
+}
+.navbar-default {
+    background-color: white;
+    border: none;
+}
+
+/* Button Styling */
+/* Button Styling */
+.btn-play{
+    height: 50px;
+    float: left;
+    font-size: 2em;
+    border-radius: 50%;
+    background-color: transparent;
+    border-color: #FA2B00;
+    border-style: solid;
+    padding: 7px;
+    color: #FA2B00;
+    margin: 0 20px 0 0;
+    vertical-align: middle;
+}
+.btn-play:hover{
+    color: #fa8133;
+    border-color: #fa8133;
+}
+.btn-play.glyphicon-play:before{
+    margin: 10px 0 10px 5px;/*center glyphicon*/
+}
+.navbar-nav > li:hover {
+    background-color: #F3F3F3;
+}
+.navbar-nav > li > a:hover{
+    color: blue !important;
+}
+.navbar-right > .orange{
+    margin:12px 0 0 12px;
+}
+.orange{
+    border-radius:0;
+    background-color: #FA2B00;
+    color: #ffffff;
+    /*576 x 178*/
+}
+.orange:visited{
+    color: #ffffff;
+}
+.orange:hover{
+    color: #ffffff;
+    background-color: #BA2202;
+    background: -webkit-linear-gradient(#FA2B00, orange); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#FA2B00, orange); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#FA2B00, orange); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#FA2B00, orange); /* Standard syntax */
+    border-color: #FA2B00;
+}
+.orange:active {
+    /*border-top: 1px solid rgba(0, 0, 0, 0);*/
+    /*padding: 11px 16px 9px 16px;*/
+}
+.btn-orange-border{
+    border: 2px solid #FA2B00;
+    border-radius:0;
+    border-bottom-right-radius:0;
+    border-bottom-left-radius:0;
+}
+.btn-thick-border{
+    border-width: 3px;
+}
+.btn-orange-border, .btn-orange-border:visited {
+    color: #FA2B00;
+}
+.btn-orange-border:hover{
+    color: orange;
+}
+.btn-face{
+    opacity: 0.2;
+    border: 0px;
+    padding: 24px 40px;
+    margin: 4px;
+    box-shadow: none !important;
+    border-radius: 0;
+}
+.btn-group > .btn:last-child {
+    margin-right: 0;
+}
+.btn-face:hover{
+    opacity: 0.5;
+}
+.nowrap, .quote > span{
+    color: #006895;
+     white-space: nowrap;
+}
+/* .btn-face:active .btn-face:visited, .btn-face:focus*/
+.btn-face.active{
+    opacity: 1;
+    outline:none !important;
+}
+.btn-blue, .btn-blue:active, .btn-blue:hover, .btn-blue:visited{
+    color: white;
+}
+.btn-blue {
+    font-size: 1.5em;
+    border-radius:0;
+    background-color: #006895;
+    /*margin-top: calc(5% + 120px)*/
+}
+.btn-blue:hover{
+    border-color: #006895;
+    background: -webkit-linear-gradient(#006895, lightblue); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#006895, lightblue); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#006895, lightblue); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#006895, lightblue); /* Standard syntax */
+}
+.vert-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.container-blue{
+    height: 100px;
+}
+.btn-lg{ padding: 14px 16px;}
+.btn-xl:active{
+    padding: 16px 50px 14px 50px;/*1px lower */
+}
+.btn-xl, btn-xl:active{
+    padding: 15px 50px;
+    font-size: 18px;
+    line-height: 1.3333333;
+}
+h1{
+    font-family: DIN Alternate;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background-color: #D4E8F0;
+    font-weight: bold;
+    color: blue;
+}
+.link{
+    text-decoration: underline;
+}
+hr.vertical
+{
+	border-left: 1px solid #000;
+    margin: 23px 5px;
+    height: 30px;
+}
+.logo{
+    position: absolute;
+    height: 60px;
+    left: -5px;
+	top: 10px;
+}
+li:hover{
+    color: blue;
+}
+
+/* Images   */
+/* Images   */
+
+.bigimage{
+    background-size: cover;
+}
+#darkglimmer{
+    /*image: url(../images/darkglimmer.png);*/
+    background-image: url(../images/darkglimmer.png);
+    /*width: 100%;height:100%*/
+    color: white;
+}
+#sitcircle{
+    background-image: url("../images/sitcircleimage.png");
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+}
+.fullimage{
+    width: 100%;height:100%
+}
+
+/* 3 Who We Are Boxes */
+/* 3 Who We Are Boxes */
+
+.outergray{
+    height: 400px;
+    position: relative;
+}
+.grayband{
+    top: 0px;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    background-color:#DEDEDE;
+}
+.companyboxes{
+    display: flex;
+    position: relative;
+    width: 60%;
+    
+}
+.cbox, .quotebox, .btn-face{
+    background-color: #F3F3F3 !important;
+}
+.cbox{
+    margin: 3px;
+    padding: 15px 5% 30px 5%;
+    font-size: 1.25em;
+    text-align: center;
+    flex-basis: 0; flex-grow:1;/*combined make equal size*/
+}
+a{
+    cursor:pointer;
+}
+.bold{
+    font-weight: bold;
+}
+.space{
+    height: 40px;
+}
+.stretched{
+    width: auto;
+}
+.buffer{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.buffer-below{
+    margin-bottom: 10px;
+}
+
+/*  Faces + Quotes  */
+
+.img-circle{
+    margin-bottom:20px;
+}
+.quotebox{
+    display: table;
+    margin: auto;
+    margin-bottom: 120px;
+    width: 70%;
+    height: 102px;
+    min-width:660px;
+}
+.quote{
+    display: table-cell;
+    vertical-align: middle;
+    margin: auto;
+    height: 50%;
+    width: 90%;
+    padding: 0 7%;
+    font-size: 1.1em;
+}
+
+
+//== Media queries breakpoints
+/*$screen-xs:                  480px;*/
+/*$screen-sm:                  768px;*/
+/*$screen-md:                  992px;*/
+/*$screen-lg:                  1200px;*/
+
+/* Small Screen <768 (Media Query)*/
+@media (max-width: $screen-sm) {
+
+	.logo{
+		height: 50px;
+		top: 0px;
+	}
+	.stretched{
+		padding:0px;
+	}
+	.stretched .btn{
+		float:none !important;
+		margin-bottom:20px;
+	}
+    .cbox{
+	padding: 10px 5% 15px 5%;
+    }
+    .mobile-hidden, .navbar-right > .orange, hr.vertical{
+        display: none;
+    }
+    .companyboxes{
+        flex-direction: column;
+    }
+	.btn-group{
+		width:90%;
+	}
+    .companyboxes, .quotebox{
+        min-width: 90%;/*increase width*/
+    }
+    .btn-face{
+        padding: 15px 0;
+        width: 32.6%;
+		margin: 1%;
+    }
+    .img-circle{
+        max-width: 80%;
+    }
+    .font-xl{
+        font-size:1em;
+    }
+    .font-lg{
+        font-size: 1.5em;
+        width: 480px;
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+    .font-md{
+        font-size: 1.1em;
+    }
+    .buffer {
+        margin-bottom: 0px; 
+    }
+    .container-sitting{
+        margin-left: -13px;
+        margin-right: -13px;
+    }
+}
+/* Medium Screen 768+ (Media Query)*/
+@media (min-width: $screen-sm) {
+    .nav > li > a {
+        padding: 30px 10px;
+    }
+    h1{
+        font-size: 50px;
+    }
+    .companyboxes{
+        min-width: 700px;
+    }
+    .extra-padding{
+        padding: 0 130px;
+    }
+}
+/* Large Screen 992+ (Media Query)*/
+@media (min-width: $screen-md) {
+    .buffer-below{
+        margin-bottom: 7%;
+    }
+    .buffer{
+        margin-bottom: 6%;
+    }
+    .nav > li > a {
+        padding: 30px 20px;
+    }
+}
+
+/*Tried to Fix iphone screen rotation auto zoom but didn't work :: https://gist.github.com/sergiolopes/1935528*/
